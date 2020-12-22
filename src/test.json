@@ -1,0 +1,77 @@
+{
+  "resource": "/plans/{planId}",
+  "path": "/plans/7777777",
+  "httpMethod": "GET",
+  "headers": {
+    "accept": "*/*",
+    "Host": "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com",
+    "User-Agent": "curl/7.54.0",
+    "X-Amzn-Trace-Id": "Root=1-5fe25cec-77cce9f375b8c73b44a188a5",
+    "X-Forwarded-For": "143.177.40.200",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "accept": [
+      "*/*"
+    ],
+    "Host": [
+      "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com"
+    ],
+    "User-Agent": [
+      "curl/7.54.0"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5fe25cec-77cce9f375b8c73b44a188a5"
+    ],
+    "X-Forwarded-For": [
+      "143.177.40.200"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+    "planId": "7777777"
+  },
+  "stageVariables": {
+    "deployed_at": "2020-12-22T20:53:30Z"
+  },
+  "requestContext": {
+    "resourceId": "b5olah",
+    "resourcePath": "/plans/{planId}",
+    "httpMethod": "GET",
+    "extendedRequestId": "X-N1CEOWliAFoIQ=",
+    "requestTime": "22/Dec/2020:20:54:04 +0000",
+    "path": "/prod/plans/7777777",
+    "accountId": "188397741724",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "5ny2uflhs3",
+    "requestTimeEpoch": 1608670444948,
+    "requestId": "8c91972a-139a-4409-89dd-1725aaa3e2c1",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "143.177.40.200",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "curl/7.54.0",
+      "user": null
+    },
+    "domainName": "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com",
+    "apiId": "5ny2uflhs3"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}}

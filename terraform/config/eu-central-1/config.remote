@@ -1,0 +1,4 @@
+region         = "eu-central-1"
+bucket         = "execution-plans-state-bucket"
+key            = "services/eu-central-1/execution-plans.tfstate"
+dynamodb_table = "terraform-locks"
