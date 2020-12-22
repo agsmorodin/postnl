@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "messageId": "30926a5b-4138-4d52-882b-67090c8480db",
+      "receiptHandle": "AQEBr8ysTOtOgOf55q0HSQd3FUghJGu6gd7R0tCxNKKm+ZcKvV+RuGevadJ3NmkgsPcFKipPOIdOpevFHZavVkamWBLxrBmqKqCxtqE5lP74VtXX//d0eqoXmbfqU6iyVbGHEgwavTTRK4LK2YcJQxxYCQ8HEeY0AZbWQTM7hara54VY+rt/5H5sdgBXNjRTdyZ0yh9HUqDlinRpNnLte7J9i7IzF27zhkoavqveomxyPwFPUZGP3LgjAc4lkgTvTQsUkZ+Tffy7BgNSEjvLSI3NOSl3HtndWqAe81gHi2y4kcD1ELhgPjk+Uig+q+13BUR5C+Qd7OJZoh/N0ylp8GCIWMaTwRyycfYlFvgXU8UUP8XMq7v0qIcYnJsYyuAVYw27IJqINvfqq5HCiJRbJl+ZRw==",
+      "body": "{\n  \"Type\" : \"Notification\",\n  \"MessageId\" : \"7d962d99-dc09-5e81-b7c4-75f89b7bc84c\",\n  \"TopicArn\" : \"arn:aws:sns:eu-central-1:188397741724:execution-plans-topic\",\n  \"Message\" : \"{\\\"planId\\\":\\\"3d8a6df6-e091-41de-a673-73d7925b52a2\\\",\\\"customerId\\\":123123123,\\\"address\\\":\\\"Dam Square\\\",\\\"events\\\":[\\\"started\\\",\\\"processing\\\",\\\"delivered\\\",\\\"failed\\\"],\\\"orders\\\":[{\\\"orderId\\\":1,\\\"operatorId\\\":13},{\\\"orderId\\\":2,\\\"operatorId\\\":15}]}\",\n  \"Timestamp\" : \"2020-12-26T14:14:10.803Z\",\n  \"SignatureVersion\" : \"1\",\n  \"Signature\" : \"wxw2uK57Ed/C50LAy9Tjs8wTdS7MaPHOEjk1dXzeSMNlHJnAz9Y8dBXLqykxr9qfHIB0U5NV9plCcliZrKmIaWCt4CN7A2wH44ArMCyvcWvNDrtYOep0DhSWMbXsLglGHUZColKF+hAHQ3vkfDg/I587cF/hOBEwGirQzCzdJc3dLju9CdGsEkddUaBsQss44QRGIZzxM41ONxxoLTfSkqriXHc9oQVCwl7u2RfQJH48NcY+u4Mne0/FcQyOk3XqYJHIc5sy4DUejmbNawLabZ9L2hZ8lhOEN5tigaMvFt/ri5xDKED0I1xq4g43FUR6NhYcyUJFoKANA8YhEhGPiw==\",\n  \"SigningCertURL\" : \"https://sns.eu-central-1.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem\",\n  \"UnsubscribeURL\" : \"https://sns.eu-central-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-central-1:188397741724:execution-plans-topic:6ff0abda-b53e-4045-bf1f-2158de698301\"\n}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1608992050862",
+        "SenderId": "AIDAISDDSWNBEXIA6J64K",
+        "ApproximateFirstReceiveTimestamp": "1608992050866"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "f72302a83aa9539732286275d99e83ef",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:eu-central-1:188397741724:plans_queue",
+      "awsRegion": "eu-central-1"
+    }
+  ]
+}

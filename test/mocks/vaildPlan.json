@@ -1,0 +1,21 @@
+{
+  "planId": "1111",
+  "customerId": 123123123,
+  "address": "Dam Square",
+  "events": [
+    "started",
+    "processing",
+    "delivered",
+    "failed"
+  ],
+  "orders": [
+    {
+      "orderId": 1,
+      "operatorId": 13
+    },
+    {
+      "orderId": 2,
+      "operatorId": 15
+    }
+  ]
+}

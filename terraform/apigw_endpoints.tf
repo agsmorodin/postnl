@@ -1,4 +1,3 @@
-// PLANS
 resource "aws_api_gateway_resource" "plans" {
    rest_api_id = aws_api_gateway_rest_api.execution-plans.id
    parent_id   = aws_api_gateway_rest_api.execution-plans.root_resource_id
@@ -11,7 +10,6 @@ resource "aws_api_gateway_resource" "plan" {
   path_part   = "{planId}"
 }
 
-// PLANS/PLANID
 resource "aws_api_gateway_method" "get-plan" {
   rest_api_id   = aws_api_gateway_rest_api.execution-plans.id
   resource_id   = aws_api_gateway_resource.plan.id
@@ -19,7 +17,6 @@ resource "aws_api_gateway_method" "get-plan" {
   authorization = "NONE"
 }
 
-//
 resource "aws_api_gateway_integration" "get-plan-integration" {
    rest_api_id = aws_api_gateway_rest_api.execution-plans.id
    resource_id = aws_api_gateway_method.get-plan.resource_id

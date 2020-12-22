@@ -1,8 +1,11 @@
 .DS_Store
 .idea/
-src/node_modules/
+push/node_modules/
+node_modules/
 .terraform
 .terraform.lock.hcl
 
 build.sh
 deploy.sh
+
+*.zip

@@ -1,0 +1,30 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - mkdir temp && cd temp
+      - wget https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip
+      - unzip terraform_0.14.3_linux_amd64.zip && mv terraform /bin && cd ..
+  pre_build:
+    commands:
+      - echo pre_build phase...
+  build:
+    commands:
+      - echo build phase...
+      - echo build number $CODEBUILD_BUILD_NUMBER
+      - docker-compose up -d
+      - cd terraform/ && terraform init  --backend-config=config/eu-central-1/config.remote
+      - terraform plan -var code_version=$CODEBUILD_BUILD_NUMBER  -var-file=config/eu-central-1/terraform.tfvars && cd ..
+      - npm ci
+      - npm run lint
+      - npm run test:unit
+      - npm run test:integration
+      - zip -qr  lambda.zip src/* node_modules package.json
+      - aws s3 cp lambda.zip s3://execution-plans-lambdas/lambda-${CODEBUILD_BUILD_NUMBER}.zip
+  post_build:
+    commands:
+      - echo post_build phase...
+      - cd terraform/
+      - terraform apply -var code_version=$CODEBUILD_BUILD_NUMBER -var-file=config/eu-central-1/terraform.tfvars -auto-approve

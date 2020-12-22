@@ -4,5 +4,5 @@ variable "table_count" {
 }
 
 variable "tags" {
-  type = "map"
+  type = map(string)
 }

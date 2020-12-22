@@ -1,0 +1,86 @@
+{
+  "resource": "/plans/{planId}",
+  "path": "/plans/non-existing-plan-id",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Host": "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com",
+    "Postman-Token": "e2880b0f-f4de-479a-95d5-37de77a4df95",
+    "User-Agent": "PostmanRuntime/7.26.5",
+    "X-Amzn-Trace-Id": "Root=1-5fe5d101-3a502a137bb22cec5cc3dcfa",
+    "X-Forwarded-For": "143.177.40.200",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Host": [
+      "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com"
+    ],
+    "Postman-Token": [
+      "e2880b0f-f4de-479a-95d5-37de77a4df95"
+    ],
+    "User-Agent": [
+      "PostmanRuntime/7.26.5"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-5fe5d101-3a502a137bb22cec5cc3dcfa"
+    ],
+    "X-Forwarded-For": [
+      "143.177.40.200"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": {
+    "planId": "non-existing-plan-id"
+  },
+  "stageVariables": {
+    "deployed_at": "2020-12-25T11:43:21Z",
+    "code_version": "30"
+  },
+  "requestContext": {
+    "resourceId": "b5olah",
+    "resourcePath": "/plans/{planId}",
+    "httpMethod": "GET",
+    "extendedRequestId": "YG2YLEDKliAFYVQ=",
+    "requestTime": "25/Dec/2020:11:46:09 +0000",
+    "path": "/prod/plans/non-existing-plan-id",
+    "accountId": "188397741724",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "5ny2uflhs3",
+    "requestTimeEpoch": 1608896769029,
+    "requestId": "d11d5168-d32f-45cc-ab9b-31b09e55da12",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "143.177.40.200",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "PostmanRuntime/7.26.5",
+      "user": null
+    },
+    "domainName": "5ny2uflhs3.execute-api.eu-central-1.amazonaws.com",
+    "apiId": "5ny2uflhs3"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

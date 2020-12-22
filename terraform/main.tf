@@ -4,8 +4,8 @@ terraform {
 
 resource "aws_api_gateway_deployment" "api-deploy" {
   depends_on = [
-    "aws_api_gateway_integration.get-plan-integration",
-    "aws_api_gateway_method.get-plan",
+    aws_api_gateway_integration.get-plan-integration,
+    aws_api_gateway_method.get-plan,
   ]
 
   rest_api_id = aws_api_gateway_rest_api.execution-plans.id
