@@ -2,7 +2,7 @@ const AWSXRay = require('aws-xray-sdk');
 const AWS = require('aws-sdk');
 const { v4: uuidv4 } = require('uuid');
 
-const MESSAGES_TO_GENERATE = 1000000;
+const MESSAGES_TO_GENERATE = 5;
 const BATCH = 10;
 AWS.config.update({ region: 'eu-central-1' });
 AWSXRay.setStreamingThreshold(0);
@@ -18,8 +18,10 @@ async function publishToSNS() {
         console.log('step', i);
         const snsRequests = [];
         for (let j = 0; j < BATCH; j++) {
+            const generatedPlanId = uuidv4();
+            console.log('generatedPlanId', generatedPlanId);
             const message = {
-                planId: uuidv4(),
+                planId: generatedPlanId,
                 customerId: 123123123,
                 address: 'Dam Square',
                 events: ['started', 'processing', 'delivered', 'failed'],
