@@ -60,3 +60,4 @@ Data retrieval:
 5. fix x-ray for SQS-lambda integration
 6. alerts based on cloudwatch (integration with PD?)
 7. create a separate terraform setup for CodeBuild, it's created manually right now because of chicken and egg problem
+8. describe api contracts in swagger
